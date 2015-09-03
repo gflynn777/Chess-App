@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image" >
+    
+    
+    <TextView
+        android:layout_width="match_parent" 
+        android:layout_height="30dp" 
+        android:text="@string/replay_title"
+        android:gravity="center"
+        android:background="@color/Blue"
+        android:textColor="@color/White"
+        android:textSize="20sp" />
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@layout/border"
+        android:columnWidth="20dp"
+        android:gravity="center"
+        android:horizontalSpacing="0dp"
+        android:numColumns="8"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="0dp" >
+    </GridView>
+
+    <GridLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="@dimen/abc_action_button_min_height_material"
+        android:columnCount="1" >
+
+        <Button
+            android:id="@+id/exit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="right|top"
+            android:layout_row="1"
+            android:onClick="exit"
+            android:text="@string/exit_button" />
+
+        <Button
+            android:id="@+id/next_move_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_row="1"
+            android:onClick="next"
+            android:text="@string/next_move_button" />
+
+    </GridLayout>
+
+</FrameLayout>

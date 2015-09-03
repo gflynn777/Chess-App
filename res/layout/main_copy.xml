@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollview"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_image"
+    android:layout_width="match_parent"
+    android:fillViewport="true" >
+    
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="400dp"
+	    android:orientation="vertical" >
+	
+	    <!-- This warning is fine because we don't want the GridView to scroll anyway -->
+	    <GridView
+	        android:id="@+id/gridview"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="30dp"
+	        android:background="@layout/border"
+	        android:columnWidth="20dp"
+	        android:gravity="center"
+	        android:horizontalSpacing="0dp"
+	        android:numColumns="8"
+	        android:stretchMode="columnWidth"
+	        android:verticalSpacing="0dp" >
+	    </GridView>
+	
+	    <GridLayout
+	        android:id="@+id/buttonContainer"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="2dp"
+	        android:gravity="bottom"
+	        android:columnCount="1" >
+	
+	        <Button
+	            android:id="@+id/draw_button"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_column="0"
+	            android:layout_gravity="right|top"
+	            android:layout_row="0"
+	            android:text="@string/draw_button" />
+	
+	        <Button
+	            android:id="@+id/ai_button"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_column="0"
+	            android:layout_gravity="center_horizontal|top"
+	            android:layout_row="0"
+	            android:text="@string/ai_button" />
+	
+	        <Button
+	            android:id="@+id/undoButton"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_column="0"
+	            android:layout_gravity="left|top"
+	            android:layout_row="0"
+	            android:text="@string/undo_button" />
+	
+	        <Button
+	            android:id="@+id/resign_button"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_column="0"
+	            android:layout_gravity="right|top"
+	            android:layout_row="1"
+	            android:text="@string/resign_button" />
+	
+	        <Button
+	            android:id="@+id/save_button"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_column="0"
+	            android:layout_gravity="left|top"
+	            android:layout_row="1"
+	            android:onClick="saveReplay"
+	            android:text="@string/save_button" />
+	        
+	        <Button
+	            android:id="@+id/stored_button"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_column="0"
+	            android:layout_gravity="center_horizontal|top"
+	            android:layout_row="1"
+	            android:text="@string/stored_button" />
+	
+	    </GridLayout>
+	
+	</LinearLayout>
+</ScrollView>

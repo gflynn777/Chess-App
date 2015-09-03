@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- Compound drawable (text + icon) layout for add song trigger -->
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Blue"
+        android:drawablePadding="5dp"
+        android:paddingTop="6dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:text="@string/promo_title"
+        android:textColor="@color/White"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Layout for song list -->
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@color/Blue"
+        android:dividerHeight="1dp"
+        android:orientation="vertical" />
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!--  Title bar -->
+    <TextView  
+        android:layout_width="match_parent" 
+        android:layout_height="30dp" 
+        android:text="@string/save_replay"
+        android:gravity="center"
+        android:background="@color/Blue"
+        android:textColor="@color/White"
+        android:textSize="20sp"
+    />
+    
+    <!--  Form for adding -->
+   <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        >
+        
+        <TextView  
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="@string/replay_name_label"
+            android:textColor="@color/Blue"
+            android:paddingBottom="2dp"/>
+        
+        <EditText
+            android:id="@+id/replay_name"
+            android:layout_width="match_parent"
+            android:background="@android:drawable/editbox_background"
+            android:hint="@string/replay_name_hint"
+            android:layout_height="wrap_content"
+        />
+        
+      
+        <!--  Buttons for save and cancel -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="20dp">
+    
+            <Button style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/replay_save"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/Blue"
+                android:text="@string/save_replay_save_label"
+                android:textSize="16sp"
+                android:textColor="@color/White"
+                android:onClick="save"
+                 />
+            
+            <Button style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/replay_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@color/Blue"
+                android:text="@string/save_replay_cancel_label"
+                android:textSize="16sp"
+                android:textColor="@color/White"
+                android:onClick="cancel"
+                 />
+                
+        </LinearLayout>
+        
+    </LinearLayout>   
+    
+</LinearLayout>

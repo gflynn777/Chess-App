@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.liflynn.chessgame"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/chess_set_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:largeHeap="true" >
+        <activity
+            android:name=".Chess"
+            android:background="@drawable/background_image"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SaveReplay" >
+        </activity>
+        <activity android:name=".PromotionPopup" >
+        </activity>
+        <activity
+            android:name=".StoredGames"
+            android:label="@string/title_activity_stored_games" >
+        </activity>
+        <activity
+            android:name=".ReplayChess"
+            android:label="@string/title_activity_replay_chess" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Chess Game</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maintest">MainActivity</string>
+    <string name="undo_button">Undo</string>
+    <string name="ai_button">AI</string>
+
+    <!-- Save Replay -->
+    <string name="save_button">Save</string>
+    <string name="save_replay">Save Replay</string>
+    <string name="replay_name_label">Name: </string>
+    <string name="replay_name_hint">Replay name</string>
+    <string name="save_replay_save_label">Save</string>
+    <string name="save_replay_cancel_label">Cancel</string>
+    <string name="title_activity_save_replay">SaveReplay</string>
+
+    <!-- Save Chess -->
+    <string name="title_activity_replay_chess">ReplayChess</string>
+    <string name="replay_title">Replay</string>
+    <string name="next_move_button">Next</string>
+    <string name="exit_button">Exit</string>
+    
+    <!-- Stored Game -->
+    <string name="title_activity_stored_games">StoredGames</string>
+    <string name="choose_game">Choose Game:</string>
+    <string name="sort_by_name">Sort by name</string>
+    <string name="sort_by_date">Sort by date</string>
+    
+    
+    <string name="promo_title">Choose Upgrade for Pawn:</string>
+    <string name="draw_button">Draw</string>
+    <string name="resign_button">Resign</string>
+    <string name="accept_draw">Accept</string>
+    <string name="deny_draw">Deny</string>
+    <string name="stored_button">Stored Games</string>
+    
+    
+
+</resources>
