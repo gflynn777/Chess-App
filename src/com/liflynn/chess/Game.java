@@ -227,7 +227,7 @@ public class Game {
 		return true;
 	}
 	
-	//King is set by move method only have to change the rook's postion
+	//King is set by move method only have to change the rook's position
 	public boolean performCastle(byte[] from, byte[] to, Space rookSpace){
 		GamePiece king = this.getSpaceAtPosition(from).getPiece();
 		GamePiece rook = rookSpace.getPiece();
